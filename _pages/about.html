@@ -228,15 +228,14 @@ window.addEventListener('load', initializeNewsSection);
 <div class="bio-section">
   <p>
     I am a PhD candidate in the Department of Electrical Engineering at Caltech, advised by
-    <a href="https://biophot.caltech.edu/">Prof. Changhuei Yang</a>. I build computational microscopy systems that pair novel optical hardware with learning-based reconstruction to capture biological dynamics at scale.
-  </p>
+    <a href="https://biophot.caltech.edu/">Prof. Changhuei Yang</a>. My research mainly focuses on: 
+
   <ul>
-    <li>Computational microscopy for gigapixel, quantitative imaging of complex specimens</li>
-    <li>Physics-informed machine learning that accelerates microscopy design and automation</li>
-    <li>Hybrid illumination and instrumentation strategies for robust, high-throughput acquisition</li>
+    <li>Developing advanced computational imaging systems - Towards automated, high-resolution, wide-field, aberration-free, high-throughput microscopy</li>
+    <li>Implementing AI in biological and biomedical applications</li>
   </ul>
   <p>
-    My goal is to transition advanced imaging ideas from the lab into impactful tools for life science discovery and translational medicine.
+    My aspiration is to transition advanced imaging techniques from the lab into real-world applications with the aid of AI.
   </p>
   <p>
     <strong>I am currently seeking internship opportunities for Summer 2026.</strong>
@@ -247,35 +246,20 @@ window.addEventListener('load', initializeNewsSection);
   <h2>News</h2>
 
   <div class="news-item">
-    <span class="news-date">09/15/2025</span> – Our preprint on hybrid-illumination multiplexed Fourier ptychographic microscopy is now on arXiv.
+    <span class="news-date">09/15/2025</span> – Our preprint on hybrid-illumination multiplexed Fourier ptychographic microscopy is now on arXiv.The paper is under review at Jphy Photonics.
+  </div>
+  <div class="news-item">
+    <span class="news-date">08/20/2025</span> – Our preprint on digital defocus aberration interference for automated optical microscopy is now on arXiv. The paper is under review at Nature Communications.
+  <div class="news-item">
+    <span class="news-date">06/12/2024</span> – I presented a poster on the Imaging Science Gordon Research Conference at Maine.
   </div>
 
   <div class="news-item">
-    <span class="news-date">08/19/2025</span> – Presented digital defocus aberration interference for automated microscopy at the Optica Imaging Congress in Seattle.
+    <span class="news-date">01/22/2024</span> – I passed the quanlification exam for Caltech EE department.
   </div>
 
-  <div class="news-item">
-    <span class="news-date">07/29/2025</span> – Delivered an invited talk at Rice University (Houston) on physics-guided computational microscopy for life science research.
-  </div>
-
-  <div class="news-item">
-    <span class="news-date">06/04/2025</span> – Spoke in the Washington University ESE Seminar Series on empowering microscopes with physics-based computation.
-  </div>
-
-  <div class="news-item">
-    <span class="news-date">05/12/2025</span> – Our Nature Communications study on data-driven analysis of embryo models is online.
-  </div>
-
-  <div class="news-item">
-    <span class="news-date">04/30/2025</span> – Shared recent advances in synergizing microscopy and computation at the University of Maryland Computer Vision Seminar.
-  </div>
-
-  <div class="news-item">
-    <span class="news-date">02/25/2025</span> – Posted new results on single-shot volumetric fluorescence imaging leveraging neural fields.
-  </div>
-
-  <div class="news-item">
-    <span class="news-date">12/03/2024</span> – Awarded the Schmidt Academy Graduate Research Fellowship for contributions to computational microscopy.
+   <div class="news-item">
+    <span class="news-date">09/14/2023</span> – I'm glad to join Caltech EE as a PhD student, working with Prof. Changhuei Yang.
   </div>
 
   <div class="news-controls">
@@ -289,6 +273,55 @@ window.addEventListener('load', initializeNewsSection);
   <p class="publications-note">
     Full publication list <a href="{{ '/publications/' | relative_url }}">here</a>. Clicking paper titles will direct to the preprint or paper page.
   </p>
+  <div class="publication">
+    <div class="publication-details">
+      <div class="publication-title">
+        <a href="{{ '/files/publications/hybrid-illumination-multiplexed-fpm.pdf' | relative_url }}" target="_blank" rel="noopener">
+          Hybrid-illumination multiplexed Fourier ptychographic microscopy with robust aberration correction
+        </a>
+      </div>
+      <div class="publication-authors">
+        <strong>Shi Zhao</strong>, Haowen Zhou, Changhuei Yang
+      </div>
+      <div class="publication-venue">arXiv:2509.05549, 2025</div>
+      <div class="publication-links">
+        <a href="{{ '/files/publications/hybrid-illumination-multiplexed-fpm.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
+        <a href="https://arxiv.org/abs/2509.05549" target="_blank" rel="noopener">arXiv</a>
+      </div>
+      <div class="publication-abstract">
+      Conventional Fourier ptychographic microscopy (FPM) and multiplexed FPM techniques suffer from limited acquisition speed and lack of aberration correction capacity.
+      We present hybrid-illumination multiplexed Fourier ptychographic microscopy (HMFPM), which integrates analytic aberration extraction with the efficiency of multiplexed illumination.
+      By combining a hybrid illumination strategy with a customized reconstruction algorithm that leverages both analytical and optimization methods, HMFPM substantially reduces the number of required measurements while maintaining robust aberration correction and stable convergence.
+      </div>
+    </div>
+    <div class="publication-image">
+      <img src="{{ '/images/HMFPM.jpg' | relative_url }}" alt="Placeholder for hybrid illumination cover image">
+    </div>
+  </div>
+
+  <div class="publication">
+    <div class="publication-details">
+      <div class="publication-title">
+        <a href="{{ '/files/publications/digital-defocus-aberration-interference.pdf' | relative_url }}" target="_blank" rel="noopener">
+          Digital defocus aberration interference for automated optical microscopy
+        </a>
+      </div>
+      <div class="publication-authors">
+        Haowen Zhou, <strong>Shi Zhao</strong>, Yujie Fan, Zhenyu Dong, Oumeng Zhang, Viviana Gradinaru, Changhuei Yang
+      </div>
+      <div class="publication-venue">arXiv:2507.10867, 2025</div>
+      <div class="publication-links">
+        <a href="{{ '/files/publications/digital-defocus-aberration-interference.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
+        <a href="https://arxiv.org/abs/2507.10867" target="_blank" rel="noopener">arXiv</a>
+      </div>
+      <div class="publication-abstract">
+        Revealed an interference signature between two-angle illuminations that directly encodes defocus, enabling calibration-free focus monitoring for automated microscope platforms.
+      </div>
+    </div>
+    <div class="publication-image">
+      <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder for defocus aberration cover image">
+    </div>
+  </div>
 
   <div class="publication">
     <div class="publication-details">
@@ -298,7 +331,7 @@ window.addEventListener('load', initializeNewsSection);
         </a>
       </div>
       <div class="publication-authors">
-        Paolo Caldarelli, Leonie Deininger, <strong>Shizhao Zhao</strong>, Pratik Panda, Changhuei Yang, Ralf Mikut, et al.
+        Paolo Caldarelli, Leonie Deininger, <strong>Shi Zhao</strong>, Pratik Panda, Changhuei Yang, Ralf Mikut, et al.
       </div>
       <div class="publication-venue">Nature Communications, 2025</div>
       <div class="publication-links">
@@ -321,7 +354,7 @@ window.addEventListener('load', initializeNewsSection);
         </a>
       </div>
       <div class="publication-authors">
-        Shizhao Zhao, Haowen Zhou, Shuo Lin, Ruizhi Cao, Changhuei Yang
+        Shi Zhao, Haowen Zhou, Shuo Lin, Ruizhi Cao, Changhuei Yang
       </div>
       <div class="publication-venue">Biomedical Optics Express 15(10):5739–5755, 2024</div>
       <div class="publication-links">
@@ -360,27 +393,5 @@ window.addEventListener('load', initializeNewsSection);
     </div>
   </div>
 
-  <div class="publication">
-    <div class="publication-details">
-      <div class="publication-title">
-        <a href="{{ '/files/publications/hybrid-illumination-multiplexed-fpm.pdf' | relative_url }}" target="_blank" rel="noopener">
-          Hybrid-illumination multiplexed Fourier ptychographic microscopy with robust aberration correction
-        </a>
-      </div>
-      <div class="publication-authors">
-        <strong>Shizhao Zhao</strong>, Haowen Zhou, Changhuei Yang
-      </div>
-      <div class="publication-venue">arXiv:2509.05549, 2025</div>
-      <div class="publication-links">
-        <a href="{{ '/files/publications/hybrid-illumination-multiplexed-fpm.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-        <a href="https://arxiv.org/abs/2509.05549" target="_blank" rel="noopener">arXiv</a>
-      </div>
-      <div class="publication-abstract">
-        Demonstrated multiplexed illumination strategies with model-based aberration compensation to push resolution, throughput, and robustness in Fourier ptychographic microscopy.
-      </div>
-    </div>
-    <div class="publication-image">
-      <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder for hybrid illumination cover image">
-    </div>
-  </div>
+
 </section>

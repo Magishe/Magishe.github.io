@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Shizhao Zhao's Homepage"
+title                    : "Shi Zhao's Homepage"
 title_separator          : "-"
-name                     : &name "Shizhao Zhao"
-description              : &description "Shizhao Zhao's homepage."
+name                     : &name "Shi Zhao"
+description              : &description "Shi Zhao's homepage."
 url                      : https://magishe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Magishe/Magishe.github.io"
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Shizhao Zhao"
+  name             : "Shi Zhao"
   avatar           : "placeholders/profile-placeholder.svg"
   bio              : "PhD Candidate, Caltech Electrical Engineering"
   location         : "Pasadena, CA"
   employer         : "Caltech"
   pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=YOUR-SCHOLAR-ID"
-  email            : "shizhao@caltech.edu"
+  googlescholar    : "https://scholar.google.com/citations?user=d4dHv9oAAAAJ&hl=en"
+  email            : "szhao5@caltech.edu"
   researchgate     :
   uri              :
   bitbucket        :
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "Magishe"
+  github           : "https://github.com/Magishe"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         : "shizhao-zhao"
-  orcid            : "https://orcid.org/0000-0000-0000-0000"
+  linkedin         : "https://www.linkedin.com/in/shi-zhao-058019292/"
+  orcid            : "https://orcid.org/0009-0008-4885-04730"
   pinterest        :
   soundcloud       :
   stackoverflow    :
