@@ -1,0 +1,13 @@
+@article{shen_automatic_2023,
+	title = {Automatic detection of circulating tumor cells and cancer associated fibroblasts using deep learning},
+	volume = {13},
+	issn = {2045-2322},
+	url = {https://doi.org/10.1038/s41598-023-32955-0},
+	doi = {10.1038/s41598-023-32955-0},
+	number = {1},
+	journal = {Scientific Reports},
+	author = {Shen, Cheng and Rawal, Siddarth and Brown, Rebecca and Zhou, Haowen and Agarwal, Ashutosh and Watson, Mark A. and Cote, Richard J. and Yang, Changhuei},
+	month = apr,
+	year = {2023},
+	pages = {5708},
+}

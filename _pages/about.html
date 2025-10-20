@@ -1,0 +1,386 @@
+---
+permalink: /
+title: ""
+excerpt: "About me"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+<script>
+function toggleNews() {
+  try {
+    var items = document.querySelectorAll('.news-item');
+    var button = document.getElementById('expandNews');
+
+    if (!button || items.length === 0) {
+      return;
+    }
+
+    var isExpanded = button.getAttribute('data-expanded') === 'true';
+
+    items.forEach(function (item, index) {
+      if (index < 5) {
+        item.style.setProperty('display', 'block', 'important');
+      } else {
+        item.style.setProperty('display', isExpanded ? 'none' : 'block', 'important');
+      }
+    });
+
+    button.setAttribute('data-expanded', isExpanded ? 'false' : 'true');
+    button.textContent = isExpanded ? 'Show More News' : 'Show Less News';
+  } catch (error) {
+    console.error('Error in toggleNews:', error);
+  }
+}
+
+function initializeNewsSection() {
+  var items = document.querySelectorAll('.news-item');
+  var button = document.getElementById('expandNews');
+
+  if (!button) {
+    return;
+  }
+
+  if (items.length <= 5) {
+    button.style.display = 'none';
+    return;
+  }
+
+  button.setAttribute('data-expanded', 'false');
+  button.textContent = 'Show More News';
+
+  items.forEach(function (item, index) {
+    if (index >= 5) {
+      item.style.setProperty('display', 'none', 'important');
+    }
+  });
+}
+
+window.addEventListener('load', initializeNewsSection);
+</script>
+
+<style>
+  body {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    line-height: 1.6;
+    color: #2d3748;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
+    color: #1a365d;
+  }
+
+  p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+  }
+
+  a {
+    color: #ec8f5e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #b2533e;
+    text-decoration: underline;
+  }
+
+  .publication {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #ec8f5e;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .publication:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .publication-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+  }
+
+  .publication-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .publication-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a365d;
+  }
+
+  .publication-authors {
+    font-size: 0.95em;
+    color: #4a5568;
+    margin-bottom: 6px;
+  }
+
+  .publication-venue {
+    font-size: 0.9em;
+    color: #b2533e;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .publication-links {
+    margin-bottom: 10px;
+  }
+
+  .publication-links a {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 4px 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    font-size: 0.85em;
+    transition: background-color 0.2s ease;
+  }
+
+  .publication-links a:hover {
+    background: #cbd5e0;
+  }
+
+  .publication-abstract {
+    font-size: 0.9em;
+    color: #718096;
+    line-height: 1.6;
+  }
+
+  .publications-note {
+    font-size: 0.9em;
+    color: #718096;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .news-item {
+    margin-bottom: 15px;
+    padding: 12px;
+    background: #f7fafc;
+    border-left: 3px solid #186f65;
+    border-radius: 4px;
+  }
+
+  .news-date {
+    font-weight: 600;
+    color: #2d3748;
+  }
+
+  .news-controls {
+    text-align: right;
+    margin-top: 15px;
+  }
+
+  .expand-button {
+    background: #ec8f5e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .expand-button:hover {
+    background: #b2533e;
+  }
+
+  .expand-button:active {
+    background: #8b3a2f;
+    transform: translateY(1px);
+  }
+
+  @media (max-width: 768px) {
+    .publication {
+      padding: 15px;
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .publication-title {
+      font-size: 1.05em;
+    }
+  }
+</style>
+
+<div class="bio-section">
+  <p>
+    I am a PhD candidate in the Department of Electrical Engineering at Caltech, advised by
+    <a href="https://biophot.caltech.edu/">Prof. Changhuei Yang</a>. I build computational microscopy systems that pair novel optical hardware with learning-based reconstruction to capture biological dynamics at scale.
+  </p>
+  <ul>
+    <li>Computational microscopy for gigapixel, quantitative imaging of complex specimens</li>
+    <li>Physics-informed machine learning that accelerates microscopy design and automation</li>
+    <li>Hybrid illumination and instrumentation strategies for robust, high-throughput acquisition</li>
+  </ul>
+  <p>
+    My goal is to transition advanced imaging ideas from the lab into impactful tools for life science discovery and translational medicine.
+  </p>
+  <p>
+    <strong>I am currently seeking internship opportunities for Summer 2026.</strong>
+  </p>
+</div>
+
+<section class="news-section">
+  <h2>News</h2>
+
+  <div class="news-item">
+    <span class="news-date">09/15/2025</span> – Our preprint on hybrid-illumination multiplexed Fourier ptychographic microscopy is now on arXiv.
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">08/19/2025</span> – Presented digital defocus aberration interference for automated microscopy at the Optica Imaging Congress in Seattle.
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">07/29/2025</span> – Delivered an invited talk at Rice University (Houston) on physics-guided computational microscopy for life science research.
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">06/04/2025</span> – Spoke in the Washington University ESE Seminar Series on empowering microscopes with physics-based computation.
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">05/12/2025</span> – Our Nature Communications study on data-driven analysis of embryo models is online.
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">04/30/2025</span> – Shared recent advances in synergizing microscopy and computation at the University of Maryland Computer Vision Seminar.
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">02/25/2025</span> – Posted new results on single-shot volumetric fluorescence imaging leveraging neural fields.
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">12/03/2024</span> – Awarded the Schmidt Academy Graduate Research Fellowship for contributions to computational microscopy.
+  </div>
+
+  <div class="news-controls">
+    <button class="expand-button" id="expandNews" onclick="toggleNews()">Show More News</button>
+  </div>
+</section>
+
+<section class="publications-section">
+  <h2>Selected Publications</h2>
+
+  <p class="publications-note">
+    Full publication list <a href="{{ '/publications/' | relative_url }}">here</a>. Clicking paper titles will direct to the preprint or paper page.
+  </p>
+
+  <div class="publication">
+    <div class="publication-details">
+      <div class="publication-title">
+        <a href="{{ '/files/publications/ai-based-embryo-variability.pdf' | relative_url }}" target="_blank" rel="noopener">
+          AI-based approach to dissect the variability of mouse stem cell-derived embryo models
+        </a>
+      </div>
+      <div class="publication-authors">
+        Paolo Caldarelli, Leonie Deininger, <strong>Shizhao Zhao</strong>, Pratik Panda, Changhuei Yang, Ralf Mikut, et al.
+      </div>
+      <div class="publication-venue">Nature Communications, 2025</div>
+      <div class="publication-links">
+        <a href="{{ '/files/publications/ai-based-embryo-variability.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
+      </div>
+      <div class="publication-abstract">
+        Developed an interpretable deep learning pipeline that quantifies developmental variability in stem-cell derived embryo models by integrating multi-modal microscopy signals.
+      </div>
+    </div>
+    <div class="publication-image">
+      <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder for AI-based embryo variability cover image">
+    </div>
+  </div>
+
+  <div class="publication">
+    <div class="publication-details">
+      <div class="publication-title">
+        <a href="{{ '/files/publications/efficient-gigapixel-whole-slide-scanner.pdf' | relative_url }}" target="_blank" rel="noopener">
+          Efficient, gigapixel-scale, aberration-free whole slide scanner using angular ptychographic imaging with closed-form solution
+        </a>
+      </div>
+      <div class="publication-authors">
+        Shizhao Zhao, Haowen Zhou, Shuo Lin, Ruizhi Cao, Changhuei Yang
+      </div>
+      <div class="publication-venue">Biomedical Optics Express 15(10):5739–5755, 2024</div>
+      <div class="publication-links">
+        <a href="{{ '/files/publications/efficient-gigapixel-whole-slide-scanner.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
+      </div>
+      <div class="publication-abstract">
+        Introduced an angular ptychographic imaging architecture with a closed-form reconstruction that enables high-throughput, aberration-free gigapixel slide scanning without mechanical stitching.
+      </div>
+    </div>
+    <div class="publication-image">
+      <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder for whole slide scanner cover image">
+    </div>
+  </div>
+
+  <div class="publication">
+    <div class="publication-details">
+      <div class="publication-title">
+        <a href="{{ '/files/publications/digital-defocus-aberration-interference.pdf' | relative_url }}" target="_blank" rel="noopener">
+          Digital defocus aberration interference for automated optical microscopy
+        </a>
+      </div>
+      <div class="publication-authors">
+        Haowen Zhou, <strong>Shizhao Zhao</strong>, Yujie Fan, Zhenyu Dong, Oumeng Zhang, Viviana Gradinaru, Changhuei Yang
+      </div>
+      <div class="publication-venue">arXiv:2507.10867, 2025</div>
+      <div class="publication-links">
+        <a href="{{ '/files/publications/digital-defocus-aberration-interference.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
+        <a href="https://arxiv.org/abs/2507.10867" target="_blank" rel="noopener">arXiv</a>
+      </div>
+      <div class="publication-abstract">
+        Revealed an interference signature between two-angle illuminations that directly encodes defocus, enabling calibration-free focus monitoring for automated microscope platforms.
+      </div>
+    </div>
+    <div class="publication-image">
+      <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder for defocus aberration cover image">
+    </div>
+  </div>
+
+  <div class="publication">
+    <div class="publication-details">
+      <div class="publication-title">
+        <a href="{{ '/files/publications/hybrid-illumination-multiplexed-fpm.pdf' | relative_url }}" target="_blank" rel="noopener">
+          Hybrid-illumination multiplexed Fourier ptychographic microscopy with robust aberration correction
+        </a>
+      </div>
+      <div class="publication-authors">
+        <strong>Shizhao Zhao</strong>, Haowen Zhou, Changhuei Yang
+      </div>
+      <div class="publication-venue">arXiv:2509.05549, 2025</div>
+      <div class="publication-links">
+        <a href="{{ '/files/publications/hybrid-illumination-multiplexed-fpm.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
+        <a href="https://arxiv.org/abs/2509.05549" target="_blank" rel="noopener">arXiv</a>
+      </div>
+      <div class="publication-abstract">
+        Demonstrated multiplexed illumination strategies with model-based aberration compensation to push resolution, throughput, and robustness in Fourier ptychographic microscopy.
+      </div>
+    </div>
+    <div class="publication-image">
+      <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder for hybrid illumination cover image">
+    </div>
+  </div>
+</section>
