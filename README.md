@@ -1,8 +1,8 @@
-# Haowen Zhou's Academic Homepage
+# Shi Zhao's Academic Homepage
 
-**Live Website**: [https://hwzhou2020.github.io/](https://hwzhou2020.github.io/)
+**Live Website**: [https://magishe.github.io/](https://magishe.github.io/)
 
-This is the personal academic homepage of Haowen Zhou, a PhD candidate in Electrical Engineering at Caltech, advised by Prof. Changhuei Yang. The website showcases research in computational microscopy, neural fields, AI, digital pathology, and 3D imaging.
+This is the personal homepage of Shi Zhao, a PhD student in Electrical Engineering at Caltech, advised by Prof. Changhuei Yang. The template is from Haowen Zhou at Caltech (https://hwzhou2020.github.io/). 
 
 ## Website Features
 
@@ -88,7 +88,7 @@ Modify `_config.yml` for basic information, social links, and site configuration
 
 ## Contact
 
-- **Email**: hzhou7@caltech.edu
+- **Email**: szhao5@caltech.edu
 - **Institution**: California Institute of Technology
 - **Department**: Electrical Engineering
 - **Lab**: [Biophotonics Lab](https://biophot.caltech.edu/)
