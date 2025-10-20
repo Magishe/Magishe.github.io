@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shizhao Zhao | CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">Shizhao Zhao</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="publications.html">Publications</a>
+          <a class="active" href="cv.html">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-layout">
+      <section class="page-hero">
+        <h1>Curriculum Vitae</h1>
+        <p>
+          Download a PDF copy or view it directly within the browser. The
+          document updates whenever <code>cv_Shizhao.pdf</code> is replaced.
+        </p>
+      </section>
+
+      <section class="page-section">
+        <div class="embed-wrapper">
+          <a class="pill" href="cv_Shizhao.pdf" target="_blank" rel="noopener">
+            Download CV (PDF)
+          </a>
+          <iframe
+            class="cv-frame"
+            src="cv_Shizhao.pdf#toolbar=0&navpanes=0"
+            title="CV"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="copyright-year"></span> Shizhao Zhao. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("copyright-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
