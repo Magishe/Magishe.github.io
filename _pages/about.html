@@ -64,19 +64,18 @@ window.addEventListener('load', initializeNewsSection);
 </script>
 
 <style>
-  /* ====== Typography & Global Colors ====== */
   body {
     font-family: 'Arial', sans-serif !important;
     line-height: 1.6;
     color: #2d3748;
-    background-color: #FFFFFF; /* Global white background */
+    background-color: #FFFFFF;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.3;
     margin-bottom: 0.5em;
-    color: #1A365D; /* deep blue for headings */
+    color: #1A365D;
   }
 
   p {
@@ -85,30 +84,34 @@ window.addEventListener('load', initializeNewsSection);
   }
 
   a {
-    color: #EC8F5E; /* warm orange links */
+    color: #EC8F5E;
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   a:hover {
-    color: #B2533E; /* darker orange hover */
+    color: #B2533E;
     text-decoration: underline;
   }
 
-  /* ====== News Section ====== */
   .news-section {
-    background: #E9F8ED; /* very light green background */
-    border-radius: 10px;
-    padding: 25px;
+    background: transparent;
+    padding: 0;
     margin-bottom: 40px;
   }
 
   .news-item {
     margin-bottom: 15px;
     padding: 12px;
-    background: #F5FFF7; /* slightly lighter green for each item */
-    border-left: 3px solid #15c432; /* green accent */
-    border-radius: 4px;
+    background: #E9F8ED;
+    border-left: 3px solid #15c432;
+    border-radius: 8px;
+    transition: box-shadow .2s ease, transform .2s ease;
+  }
+
+  .news-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    transform: translateY(-1px);
   }
 
   .news-date {
@@ -122,7 +125,7 @@ window.addEventListener('load', initializeNewsSection);
   }
 
   .expand-button {
-    background: #EC8F5E; /* orange button */
+    background: #EC8F5E;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -133,7 +136,7 @@ window.addEventListener('load', initializeNewsSection);
   }
 
   .expand-button:hover {
-    background: #B2533E; /* darker hover */
+    background: #B2533E;
   }
 
   .expand-button:active {
@@ -141,11 +144,9 @@ window.addEventListener('load', initializeNewsSection);
     transform: translateY(1px);
   }
 
-  /* ====== Selected Publications Section ====== */
   .publications-section {
-    background: #FFFBEA; /* light yellow background */
-    border-radius: 10px;
-    padding: 25px;
+    background: transparent;
+    padding: 0;
   }
 
   .publications-note {
@@ -156,17 +157,17 @@ window.addEventListener('load', initializeNewsSection);
   }
 
   .publication {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     padding: 20px;
-    background: #FFFFFF; /* individual publication card white */
-    border-radius: 8px;
-    border-left: 4px solid #EC8F5E; /* orange left border */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #FFFBEA;
+    border-radius: 10px;
+    border-left: 4px solid #EC8F5E;
+    transition: box-shadow .2s ease, transform .2s ease;
   }
 
   .publication:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
 
   .publication-title {
@@ -227,7 +228,6 @@ window.addEventListener('load', initializeNewsSection);
     display: block;
   }
 
-  /* ====== Responsive Design ====== */
   @media (max-width: 768px) {
     .publication {
       padding: 15px;
@@ -266,11 +266,11 @@ window.addEventListener('load', initializeNewsSection);
   <h2>News</h2>
 
   <div class="news-item">
-    <span class="news-date">09/15/2025</span> – Our preprint on hybrid-illumination multiplexed Fourier ptychographic microscopy is now on arXiv.The paper is under review at Jphy Photonics.
+    <span class="news-date">09/15/2025</span> – Our preprint "Hybrid-illumination multiplexed Fourier ptychographic microscopy with robust aberration correction" is now on arXiv.The paper is under review at JPhy Photonics.
   </div>
 
   <div class="news-item">
-    <span class="news-date">08/20/2025</span> – Our preprint on digital defocus aberration interference for automated optical microscopy is now on arXiv. The paper is under review at Nature Communications.
+    <span class="news-date">08/20/2025</span> – Our preprint "Digital defocus aberration interference for automated optical microscopy" is now on arXiv. The paper is under review at Nature Communications.
   </div>
 
   <div class="news-item">
@@ -335,7 +335,7 @@ window.addEventListener('load', initializeNewsSection);
       <div class="publication-authors">
         Haowen Zhou*, <strong>Shi Zhao*</strong>, Yujie Fan, Zhenyu Dong, Oumeng Zhang, Viviana Gradinaru, Changhuei Yang
       </div>
-      <div class="publication-venue">arXiv 2025, currently under review at <a href="https://www.nature.com/ncomms/" target="_blank" rel="noopener">Nature Communications</a>
+      <div class="publication-venue">arXiv 2025,  under review at <a href="https://www.nature.com/ncomms/" target="_blank" rel="noopener">Nature Communications</a>
       </div>
       <div class="publication-links">
         <a href="{{ '/files/publications/DAbI.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
