@@ -79,131 +79,70 @@ author_profile: true
 </style>
 
 <p><strong>Click titles to access manuscripts. Publisher access may be required for certain journal articles.</strong></p>
+<div class="publication-listing">
+
+  <div class="publication-details">
+    <h3>4. <a href="https://arxiv.org/abs/2509.05549" target="_blank" rel="noopener">Hybrid-illumination multiplexed Fourier ptychographic microscopy with robust aberration correction</a></h3>
+    <p><strong>Shi Zhao</strong>, Haowen Zhou, Changhuei Yang</p>
+    <p>Under review at <em>JPhys Photonics</em>, 2025</p>
+  </div>
+</div>
+
 
 <div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for AI-based embryo variability">
-  </div>
   <div class="publication-details">
-    <h3>1. <a href="{{ '/files/publications/ai-based-embryo-variability.pdf' | relative_url }}" target="_blank" rel="noopener">AI-based approach to dissect the variability of mouse stem cell-derived embryo models</a></h3>
-    <p>Paolo Caldarelli, Leonie Deininger, <strong>Shizhao Zhao</strong>, Pratik Panda, Changhuei Yang, Ralf Mikut, et al.</p>
+    <h3>3. <a href="https://doi.org/10.48550/arXiv.2504.16247" target="_blank" rel="noopener">Analytic Fourier ptychotomography for volumetric refractive index imaging</a></h3>
+    <p>Zhenyu Dong*, Haowen Zhou*, Ruizhi Cao*, Oumeng Zhang, <strong>Shi Zhao</strong>, Pengfei Lyu, Ricard Alcalde, Changhuei Yang</p>
+    <p><em>Nature Communications</em> (in press), 2025</p>
+  </div>
+</div>
+
+<div class="publication-listing">
+  <div class="publication-details">
+    <h3>5. <a href="https://arxiv.org/abs/2507.10867" target="_blank" rel="noopener">Digital defocus aberration interference for automated optical microscopy</a></h3>
+    <p>Haowen Zhou, <strong>Shi Zhao</strong>, Yujie Fan, Zhenyu Dong, Oumeng Zhang, Viviana Gradinaru, Changhuei Yang</p>
+    <p>Under review at <em>Nature Communications</em>, 2025</p>
+  </div>
+</div>
+
+<div class="publication-listing">
+  <div class="publication-details">
+    <h3>2. <a href="https://www.nature.com/articles/s41467-025-XXXXX" target="_blank" rel="noopener">AI-based approach to dissect the variability of mouse stem cell-derived embryo models</a></h3>
+    <p>Paolo Caldarelli, Leonie Deininger, <strong>Shi Zhao</strong>, Pratik Panda, Changhuei Yang, Ralf Mikut, et al.</p>
     <p><em>Nature Communications</em>, 2025</p>
-    <p class="publication-links">
-      <a href="{{ '/files/publications/ai-based-embryo-variability.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-    </p>
   </div>
 </div>
 
 <div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for gigapixel whole slide scanner">
-  </div>
   <div class="publication-details">
-    <h3>2. <a href="{{ '/files/publications/efficient-gigapixel-whole-slide-scanner.pdf' | relative_url }}" target="_blank" rel="noopener">Efficient, gigapixel-scale, aberration-free whole slide scanner using angular ptychographic imaging with closed-form solution</a></h3>
-    <p><strong>Shizhao Zhao</strong>, Haowen Zhou, Shuo Lin, Ruizhi Cao, Changhuei Yang</p>
-    <p><em>Biomedical Optics Express</em>, 2024</p>
-    <p class="publication-links">
-      <a href="{{ '/files/publications/efficient-gigapixel-whole-slide-scanner.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-    </p>
-  </div>
-</div>
-
-<div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for digital defocus aberration interference">
-  </div>
-  <div class="publication-details">
-    <h3>3. <a href="{{ '/files/publications/digital-defocus-aberration-interference.pdf' | relative_url }}" target="_blank" rel="noopener">Digital defocus aberration interference for automated optical microscopy</a></h3>
-    <p>Haowen Zhou, <strong>Shizhao Zhao</strong>, Yujie Fan, Zhenyu Dong, Oumeng Zhang, Viviana Gradinaru, Changhuei Yang</p>
-    <p>arXiv preprint arXiv:2507.10867, 2025</p>
-    <p class="publication-links">
-      <a href="{{ '/files/publications/digital-defocus-aberration-interference.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-      <a href="https://arxiv.org/abs/2507.10867" target="_blank" rel="noopener">arXiv</a>
-    </p>
-  </div>
-</div>
-
-<div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for hybrid illumination FPM">
-  </div>
-  <div class="publication-details">
-    <h3>4. <a href="{{ '/files/publications/hybrid-illumination-multiplexed-fpm.pdf' | relative_url }}" target="_blank" rel="noopener">Hybrid-illumination multiplexed Fourier ptychographic microscopy with robust aberration correction</a></h3>
-    <p><strong>Shizhao Zhao</strong>, Haowen Zhou, Changhuei Yang</p>
-    <p>arXiv preprint arXiv:2509.05549, 2025</p>
-    <p class="publication-links">
-      <a href="{{ '/files/publications/hybrid-illumination-multiplexed-fpm.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-      <a href="https://arxiv.org/abs/2509.05549" target="_blank" rel="noopener">arXiv</a>
-    </p>
-  </div>
-</div>
-
-<div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for analytic Fourier ptychotomography">
-  </div>
-  <div class="publication-details">
-    <h3>5. <a href="https://arxiv.org/abs/2504.16247" target="_blank" rel="noopener">Analytic Fourier ptychotomography for volumetric refractive index imaging</a></h3>
-    <p>Zhenyu Dong, Haowen Zhou, Ruizhi Cao, Oumeng Zhang, <strong>Shizhao Zhao</strong>, Pengfei Lyu, Ricard Alcalde, Changhuei Yang</p>
-    <p>arXiv preprint arXiv:2504.16247, 2025</p>
-    <p class="publication-links">
-      <a href="https://arxiv.org/abs/2504.16247" target="_blank" rel="noopener">arXiv</a>
-    </p>
-  </div>
-</div>
-
-<div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for Dome-APIC illumination design">
-  </div>
-  <div class="publication-details">
-    <h3>6. <a href="https://doi.org/10.1364/BOE.555541" target="_blank" rel="noopener">Dome-APIC illumination design for high space-bandwidth product analytic imaging</a></h3>
-    <p>Siyu Lin, Haowen Zhou, Ruizhi Cao, <strong>Shizhao Zhao</strong>, Oumeng Zhang, Changhuei Yang</p>
+    <h3>1. <a href="https://doi.org/10.1364/BOE.555541" target="_blank" rel="noopener">Dome-APIC illumination design for high space-bandwidth product analytic imaging</a></h3>
+    <p>Siyu Lin, Haowen Zhou, Ruizhi Cao, <strong>Shi Zhao</strong>, Oumeng Zhang, Changhuei Yang</p>
     <p><em>Biomedical Optics Express</em>, 2025</p>
-    <p class="publication-links">
-      <a href="https://doi.org/10.1364/BOE.555541" target="_blank" rel="noopener">DOI</a>
-    </p>
   </div>
 </div>
 
 <div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for one-pot multi-frame denoising">
-  </div>
   <div class="publication-details">
-    <h3>7. <a href="https://doi.org/10.1007/s11263-023-01926-3" target="_blank" rel="noopener">One-pot multi-frame denoising</a></h3>
-    <p>Linqi Jin, Qi Guo, <strong>Shizhao Zhao</strong>, Li Zhu, Qi Chen, Qi Ren, Yunzhi Lu</p>
-    <p><em>International Journal of Computer Vision</em>, 2024</p>
-    <p class="publication-links">
-      <a href="https://doi.org/10.1007/s11263-023-01926-3" target="_blank" rel="noopener">DOI</a>
-    </p>
+    <h3>7. <a href="https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-10-5739" target="_blank" rel="noopener">Efficient, gigapixel-scale, aberration-free whole slide scanner using angular ptychographic imaging with closed-form solution</a></h3>
+    <p><strong>Shi Zhao*</strong>, Haowen Zhou*, Shuo Lin, Ruizhi Cao, Changhuei Yang</p>
+    <p><em>Biomedical Optics Express</em>, 2024</p>
   </div>
 </div>
 
 <div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for spectroscopic OCT classification">
+  <div class="publication-details">
+    <h3>6. <a href="https://doi.org/10.1007/s11263-023-01926-3" target="_blank" rel="noopener">One-pot multi-frame denoising</a></h3>
+    <p>Linqi Jin, Qi Guo, <strong>Shi Zhao</strong>, Li Zhu, Qi Chen, Qi Ren, Yunzhi Lu</p>
+    <p><em>International Journal of Computer Vision</em>, 2024</p>
   </div>
+</div>
+
+
+
+<div class="publication-listing">
   <div class="publication-details">
     <h3>8. <a href="https://doi.org/10.1002/jbio.202400082" target="_blank" rel="noopener">Deep learning classification of <em>ex vivo</em> human colon tissues using spectroscopic optical coherence tomography</a></h3>
-    <p>William Y. Kendall, Qing Tian, <strong>Shizhao Zhao</strong>, Samin Mirmimachi, Eoin O'Kane, Andrew Joseph, Daniel Dufault, et al.</p>
-    <p><em>Journal of Biophotonics</em>, 2024</p>
-    <p class="publication-links">
-      <a href="https://doi.org/10.1002/jbio.202400082" target="_blank" rel="noopener">DOI</a>
-    </p>
-  </div>
+    <p>William Y. Kendall, Qing Tian, <strong>Shi Zhao</strong>, Samin Mirmimachi, Eoin O'Kane, Andrew Joseph, Daniel Dufault, et al.</p>
+    </div>
 </div>
 
-<div class="publication-listing">
-  <div class="publication-image">
-    <img src="{{ '/images/placeholders/publication-placeholder.svg' | relative_url }}" alt="Placeholder cover for spectroscopic OCT preprint">
-  </div>
-  <div class="publication-details">
-    <h3>9. <a href="https://www.biorxiv.org/content/10.1101/2023.09.04.559574v1" target="_blank" rel="noopener">Deep learning classification of <em>ex vivo</em> human colon tissues using spectroscopic OCT</a></h3>
-    <p>William Y. Kendall, Qing Tian, <strong>Shizhao Zhao</strong>, Samin Mirmimachi, Andrew Joseph, Daniel Dufault, Chenglei Shi, et al.</p>
-    <p><em>bioRxiv</em> preprint, 2023</p>
-    <p class="publication-links">
-      <a href="https://www.biorxiv.org/content/10.1101/2023.09.04.559574v1" target="_blank" rel="noopener">bioRxiv</a>
-    </p>
-  </div>
-</div>
