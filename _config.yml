@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Shi Zhao"
-  avatar           : "placeholders/profile-placeholder.svg"
+  avatar           : "/ShiZhao.png"
   bio              : "PhD Candidate, Caltech Electrical Engineering"
   location         : "Pasadena, CA"
   employer         : "Caltech"
